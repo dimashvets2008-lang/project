@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechZone — Каталог</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container header__row">
+          <a class="brand" href="index.html"><img class="brand__logo" src="TechZone.png" alt="TechZone" /></a>
+          <div></div>
+          <div class="header__controls">
+            <input class="nav__toggle" type="checkbox" id="nav-catalog" />
+            <label class="nav__burger" for="nav-catalog" aria-label="Меню"><span></span><span></span><span></span></label>
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__btn" href="catalog.html">Каталог</a>
+              <a class="nav__link" href="profile.html">Личный кабинет</a>
+              <a class="nav__link" href="login.html">Вход</a>
+              <a class="nav__link" href="register.html">Регистрация</a>
+              <a class="nav__link" href="admin.html">Админка</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <h1 class="page-title">Каталог гаджетов/устройств</h1>
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-all" checked />
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-console" />
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-tablet" />
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-laptop" />
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-periphery" />
+            <input class="catalog-filter-radio" type="radio" name="cat" id="cat-home" />
+
+            <button class="btn-ghost filter-mobile" type="button">Открыть фильтр</button>
+            <div class="filter-mobile-list panel">
+              <label class="filter-option" for="cat-all">Все товары</label>
+              <label class="filter-option" for="cat-console">Игровые приставки</label>
+              <label class="filter-option" for="cat-tablet">Планшеты</label>
+              <label class="filter-option" for="cat-laptop">Ноутбуки</label>
+              <label class="filter-option" for="cat-periphery">Периферия</label>
+              <label class="filter-option" for="cat-home">Техника для дома</label>
+            </div>
+            <div class="catalog-layout">
+              <aside class="filter-panel">
+                <h2 class="subtitle">Фильтр по категориям</h2>
+                <div class="form-grid" style="margin-top: 10px">
+                  <label class="filter-option" for="cat-all">Все товары</label>
+                  <label class="filter-option" for="cat-console">Игровые приставки</label>
+                  <label class="filter-option" for="cat-tablet">Планшеты</label>
+                  <label class="filter-option" for="cat-laptop">Ноутбуки</label>
+                  <label class="filter-option" for="cat-periphery">Периферия</label>
+                  <label class="filter-option" for="cat-home">Техника для дома</label>
+                </div>
+              </aside>
+
+              <div class="products" role="list" style="margin-top: 0">
+                <article class="product cat-console" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/nintendo-switch-2.jpg" alt="Nintendo Switch 2" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Nintendo Switch 2</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Игровые приставки</dd></div>
+                      <div><dt>Бренд</dt><dd>Nintendo</dd></div>
+                      <div><dt>Стоимость</dt><dd>49 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-tablet" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/redmi-tablet.jpg" alt="Планшет Redmi" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Планшет Redmi</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Планшеты</dd></div>
+                      <div><dt>Бренд</dt><dd>Redmi</dd></div>
+                      <div><dt>Стоимость</dt><dd>29 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★☆☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-periphery" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/dark-project-vscode.jpg" alt="Dark Project x VS Code" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Dark Project x VS Code</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Периферия</dd></div>
+                      <div><dt>Бренд</dt><dd>Dark Project</dd></div>
+                      <div><dt>Стоимость</dt><dd>10 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★★</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-laptop" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/msi-gaming-laptop.png" alt="Ноутбук MSI" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Ноутбук MSI</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Ноутбуки</dd></div>
+                      <div><dt>Бренд</dt><dd>MSI</dd></div>
+                      <div><dt>Стоимость</dt><dd>109 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★★</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/air-cleaner-coolroom.png" alt="Очиститель воздуха Cool Room" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Очиститель воздуха Cool Room</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>Cool Room</dd></div>
+                      <div><dt>Стоимость</dt><dd>12 490 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★☆☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/wireless-vacuum.png" alt="Беспроводной пылесос" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Беспроводной пылесос</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>HomeClean</dd></div>
+                      <div><dt>Стоимость</dt><dd>17 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/thermos-zojirushi.png" alt="Термос Zojirushi" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Термос Zojirushi 480 мл</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>Zojirushi</dd></div>
+                      <div><dt>Стоимость</dt><dd>3 490 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★★</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/humidifier-bfg.png" alt="Увлажнитель воздуха BFG" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Увлажнитель воздуха BFG</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>BFG</dd></div>
+                      <div><dt>Стоимость</dt><dd>6 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/table-fan-purple.png" alt="Настольный вентилятор" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Настольный вентилятор</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>Windy</dd></div>
+                      <div><dt>Стоимость</dt><dd>4 290 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★☆☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/electric-kettle-cronier.png" alt="Электрический чайник Cronier" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Электрический чайник Cronier</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>Cronier</dd></div>
+                      <div><dt>Стоимость</dt><dd>5 490 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★★☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+                <article class="product cat-home" role="listitem">
+                  <div class="product__media"><img class="product__img" src="товары/compact-air-purifier.png" alt="Компактный очиститель воздуха" /></div>
+                  <div class="product__body">
+                    <h3 class="product__title">Компактный очиститель воздуха</h3>
+                    <dl class="product__meta">
+                      <div><dt>Категория</dt><dd>Техника для дома</dd></div>
+                      <div><dt>Бренд</dt><dd>Clean Air</dd></div>
+                      <div><dt>Стоимость</dt><dd>8 990 ₽</dd></div>
+                      <div><dt>Наличие</dt><dd class="stars">★★★☆☆</dd></div>
+                    </dl>
+                    <div class="actions"><a class="btn-main" href="#">Подробнее</a></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

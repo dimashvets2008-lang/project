@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechZone — Админ-панель</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container header__row">
+          <a class="brand" href="index.html"><img class="brand__logo" src="TechZone.png" alt="TechZone" /></a>
+          <div></div>
+          <div class="header__controls">
+            <input class="nav__toggle" type="checkbox" id="nav-admin" />
+            <label class="nav__burger" for="nav-admin" aria-label="Меню"><span></span><span></span><span></span></label>
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__link" href="catalog.html">Каталог</a>
+              <a class="nav__link" href="profile.html">Профиль</a>
+              <a class="nav__link" href="login.html">Вход</a>
+              <a class="nav__link" href="register.html">Регистрация</a>
+              <a class="nav__btn" href="admin.html">Админка</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <h1 class="page-title">Административная панель</h1>
+            <p class="page-subtitle">Добавление нового гаджета/устройства.</p>
+            <form class="panel form-grid form-grid--2" action="#" method="post" enctype="multipart/form-data">
+              <label class="field"><span class="label">Название гаджета/устройства</span><input class="input" type="text" required /></label>
+              <label class="field"><span class="label">Категория</span><input class="input" type="text" required /></label>
+              <label class="field"><span class="label">Компания-бренд</span><input class="input" type="text" required /></label>
+              <label class="field" style="grid-column: 1 / -1"><span class="label">Описание</span><textarea class="textarea" required></textarea></label>
+              <label class="field"><span class="label">Стоимость</span><input class="input" type="number" min="0" step="1" required /></label>
+              <div class="actions" style="grid-column: 1 / -1">
+                <button class="btn-main" type="submit">Добавить</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

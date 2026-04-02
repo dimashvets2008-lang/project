@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechZone — Вход</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container header__row">
+          <a class="brand" href="index.html"><img class="brand__logo" src="TechZone.png" alt="TechZone" /></a>
+          <div></div>
+          <div class="header__controls">
+            <input class="nav__toggle" type="checkbox" id="nav-login" />
+            <label class="nav__burger" for="nav-login" aria-label="Меню"><span></span><span></span><span></span></label>
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__link" href="catalog.html">Каталог</a>
+              <a class="nav__btn" href="login.html">Вход</a>
+              <a class="nav__link" href="register.html">Регистрация</a>
+              <a class="nav__link" href="profile.html">Кабинет</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <h1 class="page-title">Вход в личный кабинет</h1>
+            <p class="page-subtitle">Введите e-mail и пароль для входа.</p>
+            <form class="panel form-grid" action="#" method="post">
+              <label class="field">
+                <span class="label">E-mail</span>
+                <input class="input" type="email" name="email" required />
+              </label>
+              <label class="field">
+                <span class="label">Пароль</span>
+                <input class="input" type="password" name="password" required />
+              </label>
+              <div class="actions">
+                <button class="btn-main" type="submit">Войти</button>
+                <a class="btn-ghost" href="#">Восстановить пароль</a>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

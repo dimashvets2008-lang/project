@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechZone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description" content="TechZone" />
+  </head>
+  <body>
+    <input class="theme-toggle__control" type="checkbox" id="theme-toggle" />
+
+    <div class="page">
+      <a class="skip-link" href="#search">Перейти к поиску</a>
+
+      <header class="header">
+        <div class="container header__row">
+          <a class="brand" href="index.html" aria-label="TechZone — на главную">
+            <img class="brand__logo" src="TechZone.png" alt="TechZone" />
+          </a>
+
+          <form class="header-search" action="#search" method="get" role="search">
+            <label class="header-search__field">
+              <span class="header-search__label">Категория</span>
+              <input
+                class="header-search__input"
+                name="q"
+                list="categories"
+                placeholder="Смартфоны, ноутбуки, часы…"
+                autocomplete="off"
+              />
+              <datalist id="categories">
+                <option value="Смартфоны"></option>
+                <option value="Ноутбуки"></option>
+                <option value="Умные часы"></option>
+                <option value="Планшеты"></option>
+                <option value="Наушники"></option>
+                <option value="Аксессуары"></option>
+              </datalist>
+            </label>
+            <button class="header-search__btn" type="submit">Найти</button>
+          </form>
+
+          <div class="header__controls">
+            <input class="nav__toggle" type="checkbox" id="nav-toggle" />
+            <label class="nav__burger" for="nav-toggle" aria-label="Открыть меню">
+              <span></span><span></span><span></span>
+            </label>
+
+            <nav class="nav" aria-label="Навигация">
+              <a class="nav__link" href="#search">Поиск</a>
+              <a class="nav__btn" href="profile.html">Личный кабинет</a>
+              <a class="nav__link" href="catalog.html">Каталог товаров</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+      <section class="section" aria-label="Хиты продаж">
+        <div class="container">
+          <h2 class="subtitle subtitle--center">Хиты продаж</h2>
+
+          <div class="slider" aria-label="Слайдер хитов продаж">
+            <input
+              class="slider__radio"
+              type="radio"
+              name="hits"
+              id="hit-1"
+              checked
+            />
+            <input class="slider__radio" type="radio" name="hits" id="hit-2" />
+            <input class="slider__radio" type="radio" name="hits" id="hit-3" />
+
+            <div class="slider__viewport">
+              <div class="slider__track">
+                <article class="slide">
+                  <div class="slide__media">
+                    <img
+                      class="slide__img"
+                      src="Iphone 17 pro.png"
+                      alt="iPhone 17 Pro"
+                    />
+                  </div>
+                  <div class="slide__info">
+                    <h3 class="slide__title">iPhone 17 Pro</h3>
+                    <div class="slide__price">139 990 ₽</div>
+                    <a class="buy" href="catalog.html">Купить</a>
+                  </div>
+                </article>
+
+                <article class="slide">
+                  <div class="slide__media">
+                    <img
+                      class="slide__img"
+                      src="s 26.png"
+                      alt="Galaxy S26"
+                    />
+                  </div>
+                  <div class="slide__info">
+                    <h3 class="slide__title">Galaxy S26</h3>
+                    <div class="slide__price">119 990 ₽</div>
+                    <a class="buy" href="catalog.html">Купить</a>
+                  </div>
+                </article>
+
+                <article class="slide">
+                  <div class="slide__media">
+                    <img
+                      class="slide__img"
+                      src="pixelpng.png"
+                      alt="Pixel 10 Pro"
+                    />
+                  </div>
+                  <div class="slide__info">
+                    <h3 class="slide__title">Pixel 10 Pro</h3>
+                    <div class="slide__price">99 990 ₽</div>
+                    <a class="buy" href="catalog.html">Купить</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="slider__dots" aria-label="Индикация активного слайда">
+              <label class="dot" for="hit-1" aria-label="Слайд 1"></label>
+              <label class="dot" for="hit-2" aria-label="Слайд 2"></label>
+              <label class="dot" for="hit-3" aria-label="Слайд 3"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-label="Преимущества маркетплейса">
+        <div class="container">
+          <h2 class="subtitle subtitle--center">Наши преимущества</h2>
+
+          <div class="features" role="list">
+            <article class="feature" role="listitem">
+              <div class="feature__icon" aria-hidden="true">
+                <img class="feature__icon-img" src="Иконки/promo.png" alt="" />
+              </div>
+              <h3 class="feature__title">Привлекательные цены</h3>
+            </article>
+
+            <article class="feature" role="listitem">
+              <div class="feature__icon" aria-hidden="true">
+                <img class="feature__icon-img" src="Иконки/support.png" alt="" />
+              </div>
+              <h3 class="feature__title">Ежемесячные акции</h3>
+            </article>
+
+            <article class="feature" role="listitem">
+              <div class="feature__icon" aria-hidden="true">
+                <img class="feature__icon-img" src="Иконки/fast-buy.png" alt="" />
+              </div>
+              <h3 class="feature__title">Круглосуточная поддержка</h3>
+            </article>
+
+            <article class="feature" role="listitem">
+              <div class="feature__icon" aria-hidden="true">
+                <img class="feature__icon-img" src="Иконки/price.png" alt="" />
+              </div>
+              <h3 class="feature__title">Быстрая покупка</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Сейчас покупают">
+        <div class="container">
+          <h2 class="subtitle subtitle--center">Сейчас покупают</h2>
+
+          <div class="products" role="list">
+            <article class="product" role="listitem">
+              <div class="product__media">
+                <img
+                  class="product__img"
+                  src="товары/nintendo-switch-2.jpg"
+                  alt="Nintendo Switch 2"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="product__title">Nintendo Switch 2</h3>
+                <dl class="product__meta">
+                  <div><dt>Категория</dt><dd>Игровые приставки</dd></div>
+                  <div><dt>Бренд</dt><dd>Nintendo</dd></div>
+                  <div><dt>Наличие</dt><dd>9 шт.</dd></div>
+                </dl>
+                <div class="product__buy">
+                  <span class="product__price">49 990 ₽</span>
+                  <a class="product__btn" href="catalog.html">В корзину</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem">
+              <div class="product__media">
+                <img
+                  class="product__img"
+                  src="товары/dark-project-vscode.jpg"
+                  alt="Клавиатура Dark Project x Visual Studio Code"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="product__title">Dark Project x VS Code</h3>
+                <dl class="product__meta">
+                  <div><dt>Категория</dt><dd>Периферия</dd></div>
+                  <div><dt>Бренд</dt><dd>Dark Project</dd></div>
+                  <div><dt>Наличие</dt><dd>14 шт.</dd></div>
+                </dl>
+                <div class="product__buy">
+                  <span class="product__price">10 990 ₽</span>
+                  <a class="product__btn" href="catalog.html">В корзину</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem">
+              <div class="product__media">
+                <img
+                  class="product__img"
+                  src="товары/yandex-station-midi.png"
+                  alt="Яндекс Станция Миди"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="product__title">Яндекс Станция Миди</h3>
+                <dl class="product__meta">
+                  <div><dt>Категория</dt><dd>Умный дом</dd></div>
+                  <div><dt>Бренд</dt><dd>Яндекс</dd></div>
+                  <div><dt>Наличие</dt><dd>21 шт.</dd></div>
+                </dl>
+                <div class="product__buy">
+                  <span class="product__price">14 990 ₽</span>
+                  <a class="product__btn" href="catalog.html">В корзину</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem">
+              <div class="product__media">
+                <img
+                  class="product__img"
+                  src="товары/razer-genshin.jpg"
+                  alt="Razer x Genshin Impact"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="product__title">Razer x Genshin Impact</h3>
+                <dl class="product__meta">
+                  <div><dt>Категория</dt><dd>Мыши</dd></div>
+                  <div><dt>Бренд</dt><dd>Razer</dd></div>
+                  <div><dt>Наличие</dt><dd>7 шт.</dd></div>
+                </dl>
+                <div class="product__buy">
+                  <span class="product__price">8 990 ₽</span>
+                  <a class="product__btn" href="catalog.html">В корзину</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product" role="listitem">
+              <div class="product__media">
+                <img
+                  class="product__img"
+                  src="товары/redmi-tablet.jpg"
+                  alt="Планшет Redmi"
+                />
+              </div>
+              <div class="product__body">
+                <h3 class="product__title">Планшет Redmi</h3>
+                <dl class="product__meta">
+                  <div><dt>Категория</dt><dd>Планшеты</dd></div>
+                  <div><dt>Бренд</dt><dd>Redmi</dd></div>
+                  <div><dt>Наличие</dt><dd>5 шт.</dd></div>
+                </dl>
+                <div class="product__buy">
+                  <span class="product__price">29 990 ₽</span>
+                  <a class="product__btn" href="catalog.html">В корзину</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--full" id="partners" aria-label="Наши партнёры">
+        <div class="container">
+          <h2 class="subtitle subtitle--center">Наши партнёры</h2>
+
+          <div class="partners" role="list">
+            <div class="partner" role="listitem">
+              <img
+                class="partner__logo"
+                src="partners/brother.png"
+                alt="Brother"
+              />
+            </div>
+            <div class="partner" role="listitem">
+              <img class="partner__logo" src="partners/aoc.png" alt="AOC" />
+            </div>
+            <div class="partner" role="listitem">
+              <img
+                class="partner__logo"
+                src="partners/razer.png"
+                alt="Razer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="search" aria-label="Поиск">
+        <div class="container">
+          <form class="panel form-grid" action="#" method="get">
+            <label class="field">
+              <input
+                class="input"
+                type="text"
+                name="query"
+                placeholder="Введите запрос..."
+              />
+            </label>
+            <div class="actions">
+              <button class="btn-main" type="submit">Найти</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      </main>
+
+      <footer class="footer section--full" aria-label="Подвал сайта">
+        <div class="container footer__grid">
+          <div class="footer__col">
+            <div class="footer__title">Телефон</div>
+            <a class="footer__link" href="tel:88009995599">8-800-999-55-99</a>
+            <div class="footer__title footer__title--spaced">E-mail</div>
+            <a class="footer__link" href="mailto:tech@zone.ru">tech@zone.ru</a>
+          </div>
+
+          <div class="footer__col footer__col--center">
+            <div class="footer__title">Информация</div>
+            <a class="footer__link" href="#clients">Клиентам</a>
+            <a class="footer__link" href="#partners">Партнерам</a>
+            <a class="footer__link" href="#about">О нас</a>
+            <a class="footer__link" href="#contacts">Контакты</a>
+          </div>
+
+          <div class="footer__col footer__col--right">
+            <div class="footer__title">Навигация по сайту</div>
+            <a class="footer__link" href="index.html">Главная</a>
+            <a class="footer__link" href="register.html">Регистрация</a>
+            <a class="footer__link" href="login.html">Авторизация</a>
+            <a class="footer__link" href="profile.html">Личный кабинет</a>
+            <a class="footer__link" href="#search">Поиск</a>
+            <div class="footer__title footer__title--spaced">Тема сайта</div>
+            <label class="theme-toggle theme-toggle--footer" for="theme-toggle">
+              <span class="theme-toggle__text">Светлая</span>
+              <span class="theme-toggle__ui" aria-hidden="true">
+                <span class="theme-toggle__knob"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="container footer__bottom">
+          <span>© 2026 TechZone.</span>
+        </div>
+
+        <div class="sr-only" aria-hidden="true">
+          <span id="top"></span>
+          <span id="clients"></span>
+          <span id="partners"></span>
+          <span id="about"></span>
+          <span id="contacts"></span>
+          <span id="register"></span>
+          <span id="login"></span>
+          <span id="cart"></span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

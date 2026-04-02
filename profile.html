@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TechZone — Личный кабинет</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container header__row">
+          <a class="brand" href="index.html"><img class="brand__logo" src="TechZone.png" alt="TechZone" /></a>
+          <div></div>
+          <div class="header__controls">
+            <input class="nav__toggle" type="checkbox" id="nav-profile" />
+            <label class="nav__burger" for="nav-profile" aria-label="Меню"><span></span><span></span><span></span></label>
+            <nav class="nav">
+              <a class="nav__link" href="index.html">Главная</a>
+              <a class="nav__link" href="catalog.html">Каталог</a>
+              <a class="nav__btn" href="profile.html">Личный кабинет</a>
+              <a class="nav__link" href="login.html">Вход</a>
+              <a class="nav__link" href="register.html">Регистрация</a>
+              <a class="nav__link" href="admin.html">Админка</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="section">
+          <div class="container">
+            <h1 class="page-title">Личный кабинет</h1>
+            <div class="profile-grid">
+              <article class="panel">
+                <h2 class="subtitle">Информация о пользователе</h2>
+                <dl class="kv">
+                  <div><dt>E-mail</dt><dd>user@techzone.ru</dd></div>
+                  <div><dt>Фамилия</dt><dd>Иванов</dd></div>
+                  <div><dt>Имя</dt><dd>Иван</dd></div>
+                  <div><dt>Дата рождения</dt><dd>12.03.2003</dd></div>
+                  <div><dt>Номер телефона</dt><dd>+7 (999) 123-45-67</dd></div>
+                </dl>
+              </article>
+              <article class="panel">
+                <h2 class="subtitle">Настройки профиля</h2>
+                <div class="actions" style="margin-top: 10px">
+                  <button class="btn-main" type="button">Сменить пароль</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <article class="panel">
+              <h2 class="subtitle">История покупок</h2>
+              <div class="table-wrap" style="margin-top: 12px">
+                <table class="table">
+                  <thead>
+                    <tr><th>Дата покупки</th><th>Название устройств</th><th>Стоимость</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>18.03.2026</td><td>Nintendo Switch 2</td><td>49 990 ₽</td></tr>
+                    <tr><td>09.02.2026</td><td>Планшет Redmi</td><td>29 990 ₽</td></tr>
+                    <tr><td>27.01.2026</td><td>Razer x Genshin Impact</td><td>8 990 ₽</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
